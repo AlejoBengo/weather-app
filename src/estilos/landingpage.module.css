@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("./fuentes/Raleway/static/Raleway-Light.ttf"),
+    url("./fuentes/Raleway/static/Raleway-Black.ttf"),
+    url("./fuentes/Raleway/static/Raleway-BlackItalic.ttf"),
+    url("./fuentes/Raleway/static/Raleway-Bold.ttf"),
+    url("./fuentes/Raleway/static/Raleway-ExtraLight.ttf"),
+    url("./fuentes/Raleway/static/Raleway-ExtraBold.ttf"),
+    url("./fuentes/Raleway/static/Raleway-LightItalic.ttf"),
+    url("./fuentes/Raleway/static/Raleway-Italic.ttf");
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.listado {
+  display: flex;
+  padding: 0;
+  width: 500%;
+  margin: auto;
+  animation: cambio 60s infinite alternate linear;
+}
+
+.eachSlide {
+  width: 100%;
+  list-style: none;
+  height: 2797px;
+}
+
+.eachImg {
+  width: 100%;
+  height: 100%;
+}
+
+.subContainer {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 12%;
+}
+
+.startBox {
+  width: 1100px;
+  height: 1100px;
+  background-color: rgba(255, 255, 255, 0.76);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Raleway";
+  font-size: 200px;
+  color: rgba(0, 0, 0);
+}
+
+.about {
+  font-family: "Raleway";
+  font-size: 200px;
+  transition: all 500ms ease;
+  color: rgba(0, 0, 0);
+}
+
+.about:hover {
+  font-size: 250px;
+  cursor: pointer;
+}
+
+.iniciar {
+  width: 500px;
+  height: 150px;
+  background-color: rgba(0, 0, 0);
+  color: rgba(255, 255, 255, 0.76);
+  font-family: "Raleway";
+  font-size: 85px;
+  border-color: rgba(0, 0, 0);
+  border-radius: 290px;
+  transition: all 500ms ease;
+}
+
+.iniciar:hover {
+  cursor: pointer;
+  width: 600px;
+  height: 190px;
+  background-color: rgb(27, 26, 26);
+  font-size: 90px;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  24% {
+    margin-left: 0;
+  }
+  26% {
+    margin-left: -100%;
+  }
+  44% {
+    margin-left: -100%;
+  }
+  46% {
+    margin-left: -200%;
+  }
+  64% {
+    margin-left: -200%;
+  }
+  66% {
+    margin-left: -300%;
+  }
+  84% {
+    margin-left: -300%;
+  }
+  86% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
