@@ -17,7 +17,7 @@ export default function LandingPage() {
       <div className={s.subContainer}>
         <div className={s.startBox}>
           <Link to="/about" style={{ textDecoration: "none" }}>
-            <h1 className={s.about}>About Us</h1>
+            <h1 className={s.about}>About Me</h1>
           </Link>
         </div>
 

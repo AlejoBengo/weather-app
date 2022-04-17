@@ -1,11 +1,52 @@
-import React from "react";
+//_______________________________________________________________________
+/*IMPORT DE UTILS*/
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+/*IMPORT DE ACTIONS*/
+import { callApi } from "../redux/actions/index";
+/*IMPORT DE CSS*/
+import s from "../estilos/searchbar.module.css";
+//_______________________________________________________________________
 
 export default function SearchBar() {
+  const dispatch = useDispatch();
+
+  const [input, setInput] = useState("");
+
+  function handlerInput(e) {
+    e.preventDefault();
+    setInput(e.target.value);
+  }
+
+  function handlerSubmit(e) {
+    e.preventDefault();
+    dispatch(callApi(input));
+    setInput("");
+  }
+
   return (
-    <div>
-      <h1>TUS CLIMAS</h1>
-      <input type="search" placeholder="Ciudad..."></input>
-      <button type="submit">Bucar</button>
+    <div className={s.container}>
+      <Link to="/">
+        <button className={s.back}>Volver</button>
+      </Link>
+      <h1 className={s.title}>Flow Climate</h1>
+      <div className={s.searcherBox}>
+        <input
+          onChange={(e) => handlerInput(e)}
+          value={input}
+          className={s.searcher}
+          type="search"
+          placeholder="Ciudad..."
+        ></input>
+        <button
+          onClick={(e) => handlerSubmit(e)}
+          className={s.submit}
+          type="submit"
+        >
+          Bucar
+        </button>
+      </div>
     </div>
   );
 }
