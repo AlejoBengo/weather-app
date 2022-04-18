@@ -17,9 +17,9 @@ export function callApi(value) {
   };
 }
 
-export function closeCard(name) {
+export function closeCard(id) {
   return {
     type: "CLOSE_CARD",
-    payload: name,
+    payload: id,
   };
 }

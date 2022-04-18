@@ -45,13 +45,13 @@ function rootReducer(state = initialState, action) {
       };
 
     case "CLOSE_CARD":
-      // const edit = state.city;
-      const done = state.city.map((pais) => {
-        return pais.name !== action.paylaod;
+      const aux = state.city.filter((pais) => {
+        return pais.id !== Number(action.payload);
       });
 
       return {
-        city: done,
+        ...state,
+        city: aux,
       };
 
     default:

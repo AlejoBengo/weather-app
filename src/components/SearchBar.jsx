@@ -30,7 +30,6 @@ export default function SearchBar() {
       <Link to="/">
         <button className={s.back}>Volver</button>
       </Link>
-      <h1 className={s.title}>Flow Climate</h1>
       <div className={s.searcherBox}>
         <input
           onChange={(e) => handlerInput(e)}
@@ -47,6 +46,7 @@ export default function SearchBar() {
           Bucar
         </button>
       </div>
+      <h1 className={s.title}>Flow Climate</h1>
     </div>
   );
 }

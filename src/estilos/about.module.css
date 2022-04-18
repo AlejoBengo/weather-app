@@ -1,12 +1,3 @@
-@font-face {
-  font-family: "Raleway";
-  src: url("./fuentes/Raleway/static/Raleway-ExtraBold.ttf");
-}
-@font-face {
-  font-family: "Raleway2";
-  src: url("./fuentes/Raleway/static/Raleway-Medium.ttf");
-}
-
 .container {
   height: 100%;
   width: 100%;
