@@ -21,8 +21,12 @@ export default function SearchBar() {
 
   function handlerSubmit(e) {
     e.preventDefault();
-    dispatch(callApi(input));
-    setInput("");
+    if (input.length !== 0) {
+      dispatch(callApi(input));
+      setInput("");
+    } else {
+      alert("No dejar el input vacío");
+    }
   }
 
   return (

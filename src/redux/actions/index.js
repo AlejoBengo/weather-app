@@ -7,6 +7,7 @@ export function callApi(value) {
       const info = await axios.get(
         `http://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${apiKey}`
       );
+
       return dispatch({
         type: "CALL_API",
         payload: info.data,

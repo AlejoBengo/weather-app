@@ -19,26 +19,28 @@ const initialState = {
 function rootReducer(state = initialState, action) {
   switch (action.type) {
     case "CALL_API":
-      const condition = action.payload.weather[0].id;
       let icono;
-      if (condition === "500") {
+      const condition = action.payload.weather[0].id;
+      if (condition === 500) {
         icono = lightRain;
-      } else if (condition === "501") {
+      } else if (condition === 501) {
         icono = moderateRain;
-      } else if (condition === "502") {
+      } else if (condition === 502) {
         icono = heavyRain;
-      } else if (condition === "801") {
+      } else if (condition === 801) {
         icono = fewClouds;
-      } else if (condition === "802") {
+      } else if (condition === 802) {
         icono = scatteredClouds;
-      } else if (condition === "803") {
+      } else if (condition === 803) {
         icono = brokenClouds;
-      } else if (condition === "804") {
+      } else if (condition === 804) {
         icono = overcastClouds;
       } else {
         icono = clear;
       }
+
       const info = { ...action.payload, icono };
+
       return {
         ...state,
         city: [...state.city, info],
