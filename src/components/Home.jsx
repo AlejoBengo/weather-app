@@ -10,9 +10,9 @@ import s from "../estilos/home.module.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className={s.cardsContainer}>
       <SearchBar />
-      <div className={s.cardsContainer}>
+      <div>
         <Cards />
       </div>
     </div>

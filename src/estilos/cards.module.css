@@ -1,3 +1,10 @@
 .container {
-  /* background-color: green; */
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+/* .eachCardContainer {
+  width: 33vw;
+  height: 40vh;
+} */
