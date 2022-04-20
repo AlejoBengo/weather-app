@@ -61,26 +61,31 @@
   cursor: pointer;
   color: rgb(27, 26, 26);
 }
-
 .iniciar {
-  width: 10vw;
-  height: 6vh;
-  background-color: rgba(0, 0, 0);
-  color: rgba(255, 255, 255, 0.76);
-  font-family: "Raleway3";
-  font-size: 4.5vh;
-  border: 1px rgb(27, 26, 26);
-  border-radius: 290px;
-  transition: all 500ms ease;
+  padding: 1.3em 3em;
+  font-size: 1.7vh;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: rgb(184, 184, 184);
+  background-color: rgba(21, 20, 20, 0.819);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
 .iniciar:hover {
-  width: 12vw;
-  height: 7vh;
-  cursor: pointer;
-  background-color: rgb(27, 26, 26);
-  border: 1px rgb(27, 26, 26);
-  font-size: 5.5vh;
+  background-color: rgba(24, 22, 22, 0.819);
+  box-shadow: 0px 15px 20px rgba(21, 20, 20, 0.819);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.iniciar:active {
+  transform: translateY(-1px);
 }
 
 @keyframes cambio {

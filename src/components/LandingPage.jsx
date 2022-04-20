@@ -16,15 +16,14 @@ export default function LandingPage() {
     <div className={s.container}>
       <div className={s.subContainer}>
         <div className={s.startBox}>
-          <Link to="/about" style={{ textDecoration: "none" }}>
-            <h1 className={s.about}>About Me</h1>
-          </Link>
-        </div>
-
-        <div className={s.startBox}>
           <h1 className={s.title}>Flow Climate</h1>
           <Link to="home">
             <button className={s.iniciar}>Iniciar</button>
+          </Link>
+        </div>
+        <div className={s.startBox}>
+          <Link to="/about" style={{ textDecoration: "none" }}>
+            <h1 className={s.about}>About Me</h1>
           </Link>
         </div>
       </div>
