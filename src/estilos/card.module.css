@@ -1,9 +1,29 @@
-.container {
-  background-color: lightblue;
+/* .container {
+  background-color: rgb(11, 11, 11);
   width: 30vw;
   height: 30vh;
   margin: 10px;
   border-radius: 30px;
+} */
+
+.card {
+  width: 30vw;
+  height: 30vh;
+  background: linear-gradient(
+    344deg,
+    rgba(40, 40, 55, 1) 0%,
+    rgba(16, 16, 18, 1) 50%
+  );
+  box-shadow: 4px 6px 14px #2f2f42;
+  border-radius: 1vh;
+  color: #f9f9f9;
+  padding: 4vh;
+  transition: all 0.3s;
+  margin: 1vh;
+}
+
+.card:hover {
+  margin-top: -30px;
 }
 
 .imgBox {
@@ -22,28 +42,87 @@
 
 .dataBox {
   position: absolute;
-  width: 21vw;
-  height: 30vh;
+  width: 22vw;
+  height: 33vh;
 }
 
 .title {
   font-family: "Raleway";
-  text-decoration: underline;
+  text-transform: uppercase;
 }
 
-.close {
+.max {
+  margin-right: 13vw;
+}
+
+.min {
+  margin-right: 13.5vw;
+}
+
+.wind {
+  margin-right: 11.2vw;
+}
+
+.noselect {
+  margin-left: 20.6vw;
+  margin-top: -4vh;
+  width: 11.5vw;
+  height: 5vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222;
+}
+
+.noselect,
+.text,
+.icon {
+  transition: 200ms;
+}
+
+.noselect .text {
+  transform: translateX(2.5vw);
+  color: white;
+  font-weight: bold;
+}
+
+.noselect .icon {
   position: absolute;
-  margin-left: 13vw;
-  background-color: black;
-  border-color: black;
-  color: #fff;
-  width: 2vw;
-  height: 3.8vh;
-  font-size: 2vh;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(8vw);
+  height: 5vh;
+  width: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.close:hover {
-  background-color: rgb(57, 55, 55);
-  border-color: rgb(57, 55, 55);
-  font-size: 2.2vh;
+.noselect svg {
+  width: 2vh;
+  fill: #eee;
+}
+
+.noselect:hover {
+  background: #ff3636;
+}
+
+.noselect:hover .text {
+  color: transparent;
+}
+
+.noselect:hover .icon {
+  width: 5vh;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.noselect:focus {
+  outline: none;
+}
+
+.noselect:active .icon svg {
+  transform: scale(0.8);
 }

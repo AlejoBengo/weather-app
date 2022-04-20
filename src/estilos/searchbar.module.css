@@ -190,6 +190,7 @@
   font-weight: 500;
   color: black;
   background-color: rgba(255, 255, 255, 0.697);
+  cursor: pointer;
 }
 
 .submit:hover {
