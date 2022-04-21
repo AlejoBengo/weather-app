@@ -17,11 +17,11 @@ code {
   src: url("../src/estilos/fuentes/Raleway/static/Raleway-ExtraBold.ttf");
 }
 @font-face {
-  font-family: "Raleway2";
-  src: url("../src/estilos/fuentes/Raleway/static/Raleway-Medium.ttf");
+  font-family: "Raleway4";
+  src: url("../src/estilos/fuentes/Raleway/static/Raleway-Light.ttf");
 }
 
 @font-face {
-  font-family: "Raleway3";
-  src: url("../src/estilos/fuentes/Raleway/static/Raleway-Light.ttf");
+  font-family: "Raleway2";
+  src: url("../src/estilos/fuentes/Raleway/static/Raleway-Medium.ttf");
 }

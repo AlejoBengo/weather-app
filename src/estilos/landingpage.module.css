@@ -44,13 +44,13 @@
 }
 
 .title {
-  font-family: "Raleway3";
+  font-family: "Raleway4";
   font-size: 8vh;
   color: rgba(0, 0, 0);
 }
 
 .about {
-  font-family: "Raleway3";
+  font-family: "Raleway4";
   font-size: 8vh;
   transition: all 500ms ease;
   color: rgba(0, 0, 0);
