@@ -12,6 +12,16 @@
   overflow: hidden;
   border-bottom: 0.3vh solid rgb(255, 72, 0);
 }
+.aviso {
+  position: absolute;
+  font-family: "Raleway4";
+  font-size: 3vh;
+  margin-top: 29vh;
+  margin-right: 75vw;
+  background-color: rgba(255, 255, 255, 0.644);
+  width: 23vw;
+  border-radius: 5vh;
+}
 
 .modelContainer {
   width: 100%;

@@ -2,7 +2,7 @@
 /*IMPORT DE UTILS*/
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 /*IMPORT DE ACTIONS*/
 import { callApi } from "../redux/actions/index";
 /*IMPORT DE CSS*/
@@ -11,6 +11,10 @@ import s from "../estilos/searchbar.module.css";
 
 export default function SearchBar() {
   const dispatch = useDispatch();
+
+  const { city } = useSelector((state) => {
+    return state;
+  });
 
   const [aux, setAux] = useState(false);
 
@@ -28,7 +32,7 @@ export default function SearchBar() {
 
   function handlerSubmit(e) {
     e.preventDefault();
-    if (input.length === 0) {
+    if (input.length === 0 || city.length > 5) {
       setAux(true);
     } else {
       dispatch(callApi(input));
@@ -41,6 +45,7 @@ export default function SearchBar() {
       <Link to="/">
         <button className={s.back}>Volver</button>
       </Link>
+      <h3 className={s.aviso}>Puede buscar hasta 6 ciudades</h3>
       <div className={s.searcherBox}>
         <input
           onChange={(e) => handlerInput(e)}
@@ -81,7 +86,7 @@ export default function SearchBar() {
               </span>
             </button>
           </header>
-          <p className={s.modalText}>Este país ya se buscó</p>
+          <p className={s.modalText}>No puede buscar esto!</p>
         </div>
       </dialog>
     </div>
