@@ -1,0 +1,60 @@
+.container {
+  background-color: rgb(74, 74, 75);
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.climateBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 26vw;
+  margin-left: 1vw;
+}
+
+.title {
+  font-family: "Raleway4";
+  font-size: 6vh;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15vw;
+}
+
+.img {
+  width: 6vw;
+  height: 12vh;
+}
+
+.github {
+  width: 6vw;
+  height: 12vh;
+  cursor: pointer;
+}
+
+.linkedIn {
+  width: 7.7vw;
+  height: 15.4vh;
+  cursor: pointer;
+}
+
+.mineBox {
+  width: 15vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.mine {
+  font-family: "Raleway4";
+  font-size: 3vh;
+  margin: 0px;
+}

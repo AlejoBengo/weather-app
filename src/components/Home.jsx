@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 /*IMPORT DE COMPONENTES*/
 import SearchBar from "./SearchBar";
 import Card from "./Card";
+import Footer from "./Footer";
 /*IMPORT DE CSS*/
 import s from "../estilos/home.module.css";
 //_______________________________________________________________________
@@ -35,6 +36,8 @@ export default function Home() {
             </div>
           ))}
       </div>
+
+      <Footer />
     </div>
   );
 }
