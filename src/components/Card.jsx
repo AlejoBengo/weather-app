@@ -18,14 +18,6 @@ export default function Card({ data }) {
 
   return (
     <div className={s.card}>
-      {/* <button
-        className={s.close}
-        value={data.id}
-        onClick={(e) => closeHandler(e)}
-      >
-        X
-      </button> */}
-
       <button
         value={data.id}
         onClick={(e) => closeHandler(e)}

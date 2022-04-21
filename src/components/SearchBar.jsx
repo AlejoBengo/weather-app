@@ -12,9 +12,9 @@ import s from "../estilos/searchbar.module.css";
 export default function SearchBar() {
   const dispatch = useDispatch();
 
-  const [input, setInput] = useState("");
-
   const [aux, setAux] = useState(false);
+
+  const [input, setInput] = useState("");
 
   function handlerInput(e) {
     e.preventDefault();
@@ -81,7 +81,7 @@ export default function SearchBar() {
               </span>
             </button>
           </header>
-          <p className={s.modalText}>No se puede encontrar una ciudad vacía.</p>
+          <p className={s.modalText}>Este país ya se buscó</p>
         </div>
       </dialog>
     </div>
