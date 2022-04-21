@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-around;
   overflow: hidden;
+  border-bottom: 0.3vh solid rgb(255, 72, 0);
 }
 
 .modelContainer {
