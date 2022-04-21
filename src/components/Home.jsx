@@ -20,7 +20,7 @@ export default function Home() {
       <div className={s.cardsContainer}>
         {city.length > 0 &&
           city.map((data) => (
-            <div key={data.id}>
+            <div className={s.eachCardContainer} key={data.id}>
               <Card data={data} />
             </div>
           ))}
