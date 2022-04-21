@@ -10,7 +10,7 @@
   height: 100vh;
   width: 500%;
   margin: auto;
-  animation: cambio 60s infinite alternate linear;
+  animation: cambio 50s infinite alternate linear;
 }
 
 .eachSlide {

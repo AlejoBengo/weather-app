@@ -16,6 +16,11 @@ export default function SearchBar() {
     return state;
   });
 
+  let arr = [];
+  for (let i = 0; i < city.length; i++) {
+    arr.push(city[i].name);
+  }
+
   const [aux, setAux] = useState(false);
 
   const [input, setInput] = useState("");
@@ -32,7 +37,12 @@ export default function SearchBar() {
 
   function handlerSubmit(e) {
     e.preventDefault();
-    if (input.length === 0 || city.length > 5) {
+    if (
+      input.length === 0 ||
+      city.length > 5 ||
+      arr.includes(e.target.value) ||
+      arr.includes(e.target.value.toLowerCase())
+    ) {
       setAux(true);
     } else {
       dispatch(callApi(input));
