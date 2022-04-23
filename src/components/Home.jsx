@@ -18,8 +18,8 @@ export default function Home() {
   let arr = [];
   let arr2 = [];
   for (let i = 0; i < city.length; i++) {
-    if (!arr2.includes(city[i].id)) {
-      arr2.push(city[i].id);
+    if (!arr2.includes(city[i].location.name)) {
+      arr2.push(city[i].location.name);
       arr.push(city[i]);
     }
   }
@@ -31,7 +31,7 @@ export default function Home() {
       <div className={s.cardsContainer}>
         {arr.length > 0 &&
           arr.map((data) => (
-            <div className={s.eachCardContainer} key={data.id}>
+            <div className={s.eachCardContainer} key={data.location.name}>
               <Card data={data} />
             </div>
           ))}

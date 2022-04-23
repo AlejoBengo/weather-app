@@ -19,7 +19,7 @@ export default function Card({ data }) {
   return (
     <div className={s.card}>
       <button
-        value={data.id}
+        value={data.name}
         onClick={(e) => closeHandler(e)}
         className={s.noselect}
       >
@@ -37,10 +37,10 @@ export default function Card({ data }) {
       </button>
 
       <div className={s.dataBox}>
-        <h1 className={s.title}>{data.name}</h1>
-        <h4 className={s.max}>MAX: {data.main.temp_max} </h4>
-        <h4 className={s.min}>MIN: {data.main.temp_min}</h4>
-        <h4 className={s.wind}>WIND: {data.wind.speed} km/h</h4>
+        <h1 className={s.title}>{data.location.name}</h1>
+        <h4 className={s.max}>MAX: {data.current.temp_f}°</h4>
+        <h4 className={s.min}>MIN: {data.current.temp_c}°</h4>
+        <h4 className={s.wind}>WIND: {data.wind_kph} km/h</h4>
       </div>
 
       <div className={s.imgBox}>

@@ -20,28 +20,28 @@ function rootReducer(state = initialState, action) {
   switch (action.type) {
     case "CALL_API":
       let icono;
-      const condition = action.payload.weather[0].id;
-      if (condition === 500) {
-        icono = lightRain;
-      } else if (condition === 501) {
-        icono = moderateRain;
-      } else if (condition === 502) {
-        icono = heavyRain;
-      } else if (condition === 801) {
-        icono = fewClouds;
-      } else if (condition === 802) {
-        icono = scatteredClouds;
-      } else if (condition === 803) {
-        icono = brokenClouds;
-      } else if (condition === 804) {
-        icono = overcastClouds;
-      } else {
+      const condition = action.payload.current.condition.code;
+      if (condition === 1000) {
         icono = clear;
+      } else if (condition === 1003) {
+        icono = fewClouds;
+      } else if (condition === 1009) {
+        icono = overcastClouds;
+      } else if (condition === 1006) {
+        icono = scatteredClouds;
+      } else if (condition === 1189) {
+        icono = moderateRain;
+      } else if (condition === 1663) {
+        icono = lightRain;
+      } else if (condition === 804) {
+        icono = heavyRain;
+      } else {
+        icono = brokenClouds;
       }
       const removeAccents = (str) => {
         return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       };
-      const name = removeAccents(action.payload.name);
+      const name = removeAccents(action.payload.location.name);
 
       const info = { ...action.payload, icono, name };
 
@@ -52,7 +52,7 @@ function rootReducer(state = initialState, action) {
 
     case "CLOSE_CARD":
       const aux = state.city.filter((pais) => {
-        return pais.id !== Number(action.payload);
+        return pais.location.name !== Number(action.payload);
       });
 
       return {

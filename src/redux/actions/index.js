@@ -5,7 +5,7 @@ export function callApi(value) {
   return (dispatch) => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${apiKey}`
+        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${value}&aqi=no`
       )
       .then((info) => {
         return dispatch({
