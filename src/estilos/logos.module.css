@@ -1,0 +1,215 @@
+/*-----------------------*/
+.css {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.css:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.express {
+  width: 14vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.express:hover {
+  width: 16vw;
+  height: 12vh;
+}
+
+/*-----------------------*/
+.firebase {
+  width: 4vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.firebase:hover {
+  width: 6vw;
+  height: 15vh;
+}
+
+/*-----------------------*/
+.git {
+  width: 5.5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.git:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.heroku {
+  width: 4.5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.heroku:hover {
+  width: 6vw;
+  height: 13vh;
+}
+
+/*-----------------------*/
+.html {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.html:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.javascript {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.javascript:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.jquery {
+  width: 12vw;
+  height: 6vh;
+  transition: all 0.5s;
+}
+
+.jquery:hover {
+  width: 14vw;
+  height: 7vh;
+}
+
+/*-----------------------*/
+.node {
+  width: 10vw;
+  height: 8vh;
+  transition: all 0.5s;
+}
+
+.node:hover {
+  width: 12vw;
+  height: 10vh;
+}
+
+/*-----------------------*/
+.postgresql {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.postgresql:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.react {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.react:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.redux {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.redux:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.sequelize {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.sequelize:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.linkedin {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.linkedin:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.github {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.github:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.instagram {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.instagram:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.twitter {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.twitter:hover {
+  width: 7vw;
+  height: 14vh;
+}
+
+/*-----------------------*/
+.whatsapp {
+  width: 5vw;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.whatsapp:hover {
+  width: 7vw;
+  height: 14vh;
+}

@@ -38,8 +38,12 @@ function rootReducer(state = initialState, action) {
       } else {
         icono = clear;
       }
+      const removeAccents = (str) => {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      };
+      const name = removeAccents(action.payload.name);
 
-      const info = { ...action.payload, icono };
+      const info = { ...action.payload, icono, name };
 
       return {
         ...state,

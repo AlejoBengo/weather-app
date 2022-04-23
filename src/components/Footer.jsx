@@ -4,8 +4,8 @@ import React from "react";
 /*IMPORT DE CSS*/
 import s from "../estilos/footer.module.css";
 import image from "../estilos/imagenes/logo.png";
-import linkedIn from "../estilos/imagenes/linkedIn.png";
-import gitHub from "../estilos/imagenes/gitHub.png";
+import linkedIn from "../estilos/imagenes/linkedin.png";
+import gitHub from "../estilos/imagenes/github.png";
 //_______________________________________________________________________
 
 export default function Footer() {
