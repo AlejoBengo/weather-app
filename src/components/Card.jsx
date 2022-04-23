@@ -15,11 +15,10 @@ export default function Card({ data }) {
     e.preventDefault();
     dispatch(closeCard(e.target.value));
   }
-
   return (
     <div className={s.card}>
       <button
-        value={data.name}
+        value={data.location.tz_id}
         onClick={(e) => closeHandler(e)}
         className={s.noselect}
       >
@@ -38,9 +37,9 @@ export default function Card({ data }) {
 
       <div className={s.dataBox}>
         <h1 className={s.title}>{data.location.name}</h1>
-        <h4 className={s.max}>MAX: {data.current.temp_f}°</h4>
-        <h4 className={s.min}>MIN: {data.current.temp_c}°</h4>
-        <h4 className={s.wind}>WIND: {data.wind_kph} km/h</h4>
+        <h4 className={s.max}>Temp F: {data.current.temp_f}°</h4>
+        <h4 className={s.min}>Temp C: {data.current.temp_c}°</h4>
+        <h4 className={s.wind}>WIND: {data.current.wind_kph} km/h</h4>
       </div>
 
       <div className={s.imgBox}>

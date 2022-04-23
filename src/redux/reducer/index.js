@@ -52,7 +52,7 @@ function rootReducer(state = initialState, action) {
 
     case "CLOSE_CARD":
       const aux = state.city.filter((pais) => {
-        return pais.location.name !== Number(action.payload);
+        return pais.location.tz_id !== action.payload;
       });
 
       return {

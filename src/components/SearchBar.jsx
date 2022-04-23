@@ -69,7 +69,7 @@ export default function SearchBar() {
           className={s.submit}
           type="submit"
         >
-          Bucar
+          Buscar
         </button>
       </div>
       <h1 className={s.title}>Flow Climate</h1>
