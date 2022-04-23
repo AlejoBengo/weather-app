@@ -1,7 +1,7 @@
 const axios = require("axios");
+const apiKey = process.env.REACT_APP_API_KEY;
 
 export function callApi(value) {
-  const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
   return (dispatch) => {
     axios
       .get(
